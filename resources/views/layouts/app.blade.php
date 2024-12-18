@@ -3,6 +3,7 @@
 <head>
     <title>@yield('title')</title>
     <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+    @vite(['resources/css/app.css', 'resources/css/style.css', 'resources/js/app.js'])
 </head>
 <body>
     <nav>

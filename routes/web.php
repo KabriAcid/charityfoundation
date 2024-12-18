@@ -15,6 +15,14 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('/programs', function () {
+    return view('programs');
+})->name('programs');
+
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
+
 Route::get('/donate', function () {
     return view('donate');
 })->name('donate');

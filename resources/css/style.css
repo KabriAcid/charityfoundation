@@ -1,0 +1,44 @@
+:root {
+    /* Primary Color */
+    --primary: #83276b; /* Rich Purple */
+
+    /* Complementary Color */
+    --complementary: #6b8327; /* Olive Green */
+
+    /* Analogous Colors */
+    --analogous-1: #83278a; /* Vivid Magenta */
+    --analogous-2: #832757; /* Deep Magenta */
+
+    /* Light Shade */
+    --light-shade: #9b4a8b; /* Soft Lavender */
+
+    /* Dark Shade */
+    --dark-shade: #5f1d4b; /* Dark Purple */
+
+    /* Neutral Colors */
+    --neutral-light: #ffffff; /* White */
+    --neutral-light-gray: #f1f1f1; /* Light Gray */
+    --neutral-dark: #333333; /* Dark Gray */
+}
+
+body {
+    background-color: var(--neutral-light);
+    color: var(--neutral-dark);
+}
+
+.navbar {
+    background-color: var(--primary)!important;
+}
+
+.navbar .nav-link {
+    color: var(--neutral-light);
+}
+
+.navbar .nav-link:hover {
+    color: var(--complementary);
+}
+
+footer {
+    background-color: var(--neutral-light-gray);
+    color: var(--neutral-dark);
+}

@@ -3,7 +3,7 @@
 @section('title', 'Charity Foundation - Home')
 
 @section('jumbotoron')
-    <div class="container-fluid jumbotoron p-5 h-100">
+    <div class="container-fluid jumbotoron p-5" style="background: url({{ asset('images/background.jpg') }});">
         <div class="container p-5">
             <h1>Charity Foundation</h1>
             <p class="">8 Years of Enduring Impact</p>
@@ -26,17 +26,44 @@
     </div>
 @endsection
 @section('our-work')
-    <div class="text-center">
-        <h2>Our Work</h2>
-    <p>Locally grounded and globally connected, we work on the most critical issues facing Asia and the Pacific.</p>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-body">
-                <img src="" alt="">
+    <div class="container-fluid p-5">
+        <div class="text-center">
+            <h2>Our Work</h2>
+            <p>Locally grounded and globally connected, we work on the most critical issues facing Asia and the Pacific.</p>
+        </div>
+        <div class="row">
+            {{-- Card --}}
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="{{ asset('images/reports1.jpg')}}" alt="" style="width: 100%; height: 300px; object-fit:cover" class="img-fluid rounded-1 shadow-xl">
+                    </div>
+                    <div>
+                        <h3>Governance</h3>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-                
+            {{-- Card --}}
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="{{ asset('images/reports2.jpg')}}" alt="" style="width: 100%; height: 300px; object-fit:cover" class="img-fluid rounded-1 shadow-xl">
+                    </div>
+                    <div>
+                        <h3>Education and Leadership</h3>
+                    </div>
+                </div>
+            </div>
+            {{-- Card --}}
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <img src="{{ asset('images/reports3.jpg')}}" alt="" style="width: 100%; height: 300px; object-fit:cover" class="img-fluid rounded-1 shadow-xl">
+                    </div>
+                    <div>
+                        <h3>Women's Empowerment</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

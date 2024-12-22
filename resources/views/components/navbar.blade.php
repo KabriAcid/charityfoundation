@@ -1,4 +1,4 @@
-<div class="navbar">
+<div class="navbar navbar-md">
     <div class="logo">
         <img src="{{ asset('favicon/favicon.png') }}" alt="Logo">
         <span>Charity Foundation</span>

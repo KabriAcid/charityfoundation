@@ -12,7 +12,7 @@
     @include('components.navbar')
 
     <!-- Main Content -->
-    <main class="container">
+    <main>
         @yield('jumbotoron')
         @yield('who-we-are')
         @yield('our-work')

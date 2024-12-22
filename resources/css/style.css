@@ -38,5 +38,8 @@ body {
 /* JUMBOTORON */
 
 .jumbotoron {
-    background: url();
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }

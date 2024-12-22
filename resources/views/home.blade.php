@@ -12,14 +12,31 @@
     </div>
 @endsection
 @section('who-we-are')
-    <div class="container-fluid bg-secondary p-5">
+    <div class="container-fluid p-5" style="background-color: #d6d6d6">
         <div class="container">
-            <div class="d-flex justify-content-center">
                 <div class="">
                     <h2>Who we Are</h3>
-                    <p>The Asia Foundation is a nonprofit international development organization committed to improving lives and expanding opportunities across Asia and the Pacific. </p>
                 </div>
-                <div class=""></div>
+                <div class="">
+                    <p>The Asia Foundation is a nonprofit international development organization committed to improving lives and expanding opportunities across Asia and the Pacific. </p>
+                    <p>Informed by 70 years of experience and deep local knowledge, our work is focused on governance, education and leadership, environment and climate resilience, inclusive growth, international cooperation, and women’s empowerment and gender equality.</p>
+                    <a href="" class="link text-decoration-none text-white">Explore our Work &rarr;</a>
+                </div>
+        </div>
+    </div>
+@endsection
+@section('our-work')
+    <div class="text-center">
+        <h2>Our Work</h2>
+    <p>Locally grounded and globally connected, we work on the most critical issues facing Asia and the Pacific.</p>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-body">
+                <img src="" alt="">
+            </div>
+            <div class="card-footer">
+                
             </div>
         </div>
     </div>

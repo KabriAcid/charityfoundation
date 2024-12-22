@@ -15,7 +15,7 @@
     <main class="container">
         @yield('jumbotoron')
         @yield('who-we-are')
-        @yield('content')
+        @yield('our-work')
     </main>
 
     <!-- Footer -->

@@ -16,7 +16,8 @@
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div class="">
-                    <h3>Who we Are</h3>
+                    <h2>Who we Are</h3>
+                    <p>The Asia Foundation is a nonprofit international development organization committed to improving lives and expanding opportunities across Asia and the Pacific. </p>
                 </div>
                 <div class=""></div>
             </div>

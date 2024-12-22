@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
     /* Primary Color */
     --primary: #83276b; /* Rich Purple */
@@ -21,24 +22,111 @@
     --neutral-dark: #333333; /* Dark Gray */
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Montserrat';
+}
 body {
     background-color: var(--neutral-light);
     color: var(--neutral-dark);
+    font-family: Catamaran, sans-serif;
 }
-
 .navbar {
-    background-color: var(--primary)!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .nav-link {
-    color: var(--neutral-light);
+.navbar .logo {
+    display: flex;
+    align-items: center;
 }
 
-.navbar .nav-link:hover {
-    color: var(--complementary);
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
 }
 
-footer {
-    background-color: var(--neutral-light-gray);
-    color: var(--neutral-dark);
+.navbar .logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+
+.navbar .menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.navbar .menu .dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar .menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .search-donate {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-donate .search-icon {
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ... previous styles ... */
+
+.navbar .search-donate .donate-button {
+    background-color: #83276b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.navbar .search-donate .donate-button:hover {
+    background-color: transparent;
+    color: #83276b;
+    border: 1px solid #83276b;
 }
